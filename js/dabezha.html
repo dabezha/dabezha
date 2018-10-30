@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Dabezha</title>
+</head>
+<body>
+
+<script>
+
+//1) С помощью цикла while вывести все простые числа в промежутке от 0 до 100
+
+var count = 98;
+var currentNumber = 2;
+
+
+while(count != 0) {
+    if(isNatural(currentNumber)) {
+        console.log(currentNumber);  
+    } 
+    currentNumber++;
+    count--;
+}
+
+function isNatural(number) {
+    for (var i = 2; i <= number/2; i++) {
+        if (number % i == 0) {
+            return false;
+        }
+    }
+    return true;
+}
+</script>
+
+
+
+
+</body>
